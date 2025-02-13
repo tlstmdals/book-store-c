@@ -1,10 +1,14 @@
-import Title from "../components/common/Title";
+import Header from "../components/common/Header";
+import { formatNumber } from "../utils/format";
+
+const COUNT = 10000;
 
 function Home() {
     return (
         <>
-        <Title size="large" color="background">제목 테스트</Title>
-        <div>home body</div>
+            <Header/>
+            <div>book store</div>
+            <div>count: {formatNumber(COUNT)}</div>
         </>
     )
 }
